@@ -1,5 +1,9 @@
 {
   "links": {
     "logIn": "Zaloguj się"
+  },
+  "hero": {
+    "title": "Filmy, seriale i wiele więcej bez ograniczeń",
+    "description": "Oglądaj wszędzie. Anuluj w każdej chwili."
   }
 }

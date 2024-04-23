@@ -1,5 +1,9 @@
 {
   "links": {
     "logIn": "Sign In"
+  },
+  "hero": {
+    "title": "Unlimited movies, TV shows, and more",
+    "description": "Watch anywhere. Cancel anytime."
   }
 }
