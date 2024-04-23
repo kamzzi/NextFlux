@@ -7,7 +7,7 @@ import polish from "./locales/pl/translations.json";
 export const BASE_LANGUAGE = "pl";
 const FALLBACK_LANGUAGE = "pl";
 
-const resources = {
+export const resources = {
   en: {
     translation: english,
   },
