@@ -1,3 +1,13 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { RoutesEnum } from "./types/shared";
+
 export const App = () => {
-  return <h1 className="text-xl text-red-500">App!</h1>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Home />} path={RoutesEnum.HOME} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
