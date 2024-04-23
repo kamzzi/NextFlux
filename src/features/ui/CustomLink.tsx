@@ -10,9 +10,9 @@ type CustomLinkProps = {
 };
 
 const modifierStyles: Record<CustomLinkModifier, string> = {
-  logo: "text-red-600 uppercase font-semibold text-2xl md:text-5xl",
+  logo: "text-red-500 uppercase font-semibold text-2xl md:text-5xl",
   primary:
-    "rounded-md bg-red-600 px-3 py-2 font-medium text-red-50 hover:bg-red-700 transition md:px-5 md:py-3",
+    "rounded-md bg-red-700 px-3 py-2 font-medium text-red-50 hover:bg-red-800 transition md:px-5 md:py-3",
 };
 
 export const CustomLink = ({

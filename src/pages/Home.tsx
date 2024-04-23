@@ -25,6 +25,12 @@ export const Home = () => {
             </Navbar.Actions>
           </Navbar>
         </Wrapper>
+        <Hero.Body>
+          <h1 className="text-3xl font-extrabold text-slate-50 md:text-4xl lg:text-5xl xl:text-6xl">
+            Unlimited movies, TV shows, and more
+          </h1>
+          <p className="text-xl xl:text-2xl">Watch anywhere. Cancel anytime.</p>
+        </Hero.Body>
       </Hero>
     </Global>
   );

@@ -26,7 +26,7 @@ export const LanguageSwitcher = () => {
         htmlFor="language"
         className="absolute left-4 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-slate-50"
       >
-        <LuLanguages />
+        <LuLanguages aria-label="Language" />
       </label>
       <select
         name="language"
