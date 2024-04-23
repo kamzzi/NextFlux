@@ -5,5 +5,8 @@
   "hero": {
     "title": "Unlimited movies, TV shows, and more",
     "description": "Watch anywhere. Cancel anytime."
+  },
+  "inputs": {
+    "emailPlaceholder": "Email address"
   }
 }

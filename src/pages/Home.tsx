@@ -7,6 +7,7 @@ import { Navbar } from "../layout/Navbar";
 import { Wrapper } from "../layout/Wrapper";
 import { RoutesEnum } from "../types/shared";
 import { LanguageSwitcher } from "../features/ui/LanguageSwitcher";
+import { Newsletter } from "../features/ui/Newsletter";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -30,6 +31,7 @@ export const Home = () => {
             {t("hero.title")}
           </h1>
           <p className="text-xl xl:text-2xl">{t("hero.description")}</p>
+          <Newsletter />
         </Hero.Body>
       </Hero>
     </Global>

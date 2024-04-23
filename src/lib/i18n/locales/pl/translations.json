@@ -5,5 +5,8 @@
   "hero": {
     "title": "Filmy, seriale i wiele więcej bez ograniczeń",
     "description": "Oglądaj wszędzie. Anuluj w każdej chwili."
+  },
+  "inputs": {
+    "emailPlaceholder": "Adres e-mail"
   }
 }
