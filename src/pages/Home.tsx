@@ -7,7 +7,7 @@ import { Navbar } from "../layout/Navbar";
 import { Wrapper } from "../layout/Wrapper";
 import { RoutesEnum } from "../types/shared";
 import { LanguageSwitcher } from "../features/ui/LanguageSwitcher";
-import { Newsletter } from "../features/ui/Newsletter";
+import { Newsletter } from "../features/ui/Newsletter/Newsletter";
 
 export const Home = () => {
   const { t } = useTranslation();

@@ -7,6 +7,10 @@
     "description": "Oglądaj wszędzie. Anuluj w każdej chwili."
   },
   "inputs": {
-    "emailPlaceholder": "Adres e-mail"
+    "email": "Adres e-mail"
+  },
+  "newsletter": {
+    "title": "Zaczynamy oglądać? Wprowadź adres e‑mail, aby utworzyć lub odnowić konto.",
+    "submit": "Rozpocznij"
   }
 }

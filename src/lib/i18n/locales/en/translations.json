@@ -7,6 +7,10 @@
     "description": "Watch anywhere. Cancel anytime."
   },
   "inputs": {
-    "emailPlaceholder": "Email address"
+    "email": "Email address"
+  },
+  "newsletter": {
+    "title": "Ready to watch? Enter your email to create or restart your membership.",
+    "submit": "Get Started"
   }
 }

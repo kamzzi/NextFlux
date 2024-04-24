@@ -10,14 +10,19 @@ import { FormItem } from "./FormItem";
 type FormProps = {
   children: ReactNode;
   extraStyles?: string;
+  onSubmit: () => void;
 };
 
-export const Form = ({ children, extraStyles }: FormProps) => {
+export const Form = ({ children, extraStyles, ...rest }: FormProps) => {
   const base = "relative mx-auto max-w-[40rem]";
 
   const className = clsx(base, extraStyles);
 
-  return <form className={className}>{children}</form>;
+  return (
+    <form className={className} {...rest}>
+      {children}
+    </form>
+  );
 };
 
 Form.Input = FormInput;
