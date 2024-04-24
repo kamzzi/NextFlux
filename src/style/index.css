@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .gradient-overlay::after {
+    content: "";
+    @apply absolute inset-0 bg-black/40 bg-gradient;
+  }
+}

@@ -5,5 +5,5 @@ type FormItemProps = {
 };
 
 export const FormItem = ({ children }: FormItemProps) => {
-  return <div>{children}</div>;
+  return <div className="relative">{children}</div>;
 };

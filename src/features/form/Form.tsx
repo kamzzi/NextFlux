@@ -13,7 +13,7 @@ type FormProps = {
 };
 
 export const Form = ({ children, extraStyles }: FormProps) => {
-  const base = "relative mx-auto max-w-[50rem]";
+  const base = "relative mx-auto max-w-[40rem]";
 
   const className = clsx(base, extraStyles);
 

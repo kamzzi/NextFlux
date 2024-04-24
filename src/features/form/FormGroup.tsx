@@ -5,5 +5,5 @@ type FormGroupProps = {
 };
 
 export const FormGroup = ({ children }: FormGroupProps) => {
-  return <div className="">{children}</div>;
+  return <div className="w-full">{children}</div>;
 };

@@ -14,7 +14,7 @@ export const HeroContent = ({ children }: HeroProps) => {
 
 export const Hero = ({ children }: HeroProps) => {
   return (
-    <header className="after:bg-gradient relative min-h-[600px] bg-black/40 bg-hero-small bg-cover bg-no-repeat after:absolute after:inset-0 after:bg-black/40 md:bg-hero-medium lg:bg-hero-large">
+    <header className="gradient-overlay relative min-h-[600px] bg-hero-small bg-cover  bg-no-repeat md:bg-hero-medium lg:bg-hero-large">
       {children}
     </header>
   );
