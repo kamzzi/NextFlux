@@ -28,7 +28,12 @@ export const Newsletter = () => {
       >
         <Form.Group>
           <Form.Item>
-            <Form.Input id="email" required {...register("email")} />
+            <Form.Input
+              id="email"
+              required
+              {...register("email")}
+              error={errors?.email?.message}
+            />
             <Form.Label id="email">{t("inputs.email")}</Form.Label>
           </Form.Item>
           {errors?.email && (
