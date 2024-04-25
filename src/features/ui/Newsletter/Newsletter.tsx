@@ -38,7 +38,8 @@ export const Newsletter = () => {
           </Form.Item>
           {errors?.email && (
             <Form.Error>
-              <MdOutlineErrorOutline /> {errors.email.message}
+              <MdOutlineErrorOutline aria-label="Error" />
+              {errors.email.message}
             </Form.Error>
           )}
         </Form.Group>
