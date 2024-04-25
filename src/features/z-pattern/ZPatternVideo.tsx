@@ -17,7 +17,7 @@ export const ZPatternVideo = ({
   const className = clsx(base, extraStyles);
 
   return (
-    <video {...rest} className={className}>
+    <video autoPlay loop muted {...rest} className={className}>
       <source src={src} type="video/mp4" />
     </video>
   );

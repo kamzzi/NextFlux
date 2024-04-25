@@ -12,5 +12,16 @@
   "newsletter": {
     "title": "Zaczynamy oglądać? Wprowadź adres e‑mail, aby utworzyć lub odnowić konto.",
     "submit": "Rozpocznij"
+  },
+  "z-pattern": {
+    "title-enjoy": "Oglądaj na telewizorze",
+    "description-enjoy": "Oglądaj na telewizorach Smart TV, konsolach PlayStation i Xbox, odtwarzaczach Chromecast, Apple TV oraz Blu-ray i nie tylko.",
+    "title-download": "Pobierz ulubione tytuły i oglądaj offline",
+    "description-download": "Zapisz ulubione tytuły, aby zawsze mieć coś do obejrzenia.",
+    "title-watch": "Oglądaj wszędzie",
+    "description-watch": "Oglądaj filmy, seriale i programy bez ograniczeń na telefonie, tablecie, laptopie i telewizorze.",
+    "title-kids": "Utwórz profile dla dzieci",
+    "description-kids": "Pozwól dzieciom przeżywać przygody w towarzystwie uwielbianych bohaterów — w specjalnej sekcji serwisu oferowanej bezpłatnie w ramach członkostwa.",
+    "overlay-downloading": "Pobieranie..."
   }
 }

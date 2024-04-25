@@ -12,5 +12,16 @@
   "newsletter": {
     "title": "Ready to watch? Enter your email to create or restart your membership.",
     "submit": "Get Started"
+  },
+  "z-pattern": {
+    "title-enjoy": "Enjoy on your TV",
+    "description-enjoy": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
+    "title-download": "Download your shows to watch offline",
+    "description-download": "Save your favorites easily and always have something to watch.",
+    "title-watch": "Watch everywhere",
+    "description-watch": "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.",
+    "title-kids": "Create profiles for kids",
+    "description-kids": "Send kids on adventures with their favorite characters in a space made just for them—free with your membership.",
+    "overlay-downloading": "Downloading..."
   }
 }

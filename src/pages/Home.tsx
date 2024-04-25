@@ -10,7 +10,6 @@ import { LanguageSwitcher } from "../features/ui/LanguageSwitcher";
 import { Newsletter } from "../features/ui/Newsletter/Newsletter";
 import { Line } from "../features/ui/Line";
 import { ZPattern } from "../features/z-pattern/ZPattern";
-import { ZPatternImage } from "../features/z-pattern/ZPatternImage";
 import { MdDownloading } from "react-icons/md";
 
 export const Home = () => {
@@ -43,20 +42,14 @@ export const Home = () => {
         <ZPattern>
           <ZPattern.Content>
             <h2 className="mb-6 text-4xl font-extrabold lg:text-5xl">
-              Enjoy on your TV
+              {t("z-pattern.title-enjoy")}
             </h2>
-            <p className="text-lg">
-              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-              Blu-ray players, and more.
-            </p>
+            <p className="text-lg">{t("z-pattern.description-enjoy")}</p>
           </ZPattern.Content>
           <ZPattern.Combinable>
             <ZPattern.Image src="./assets/images/tv.png" alt="TV" />
             <ZPattern.Video
               extraStyles="max-w-[73%] max-h-[54%] top-1/2 "
-              autoPlay
-              muted
-              loop
               src="./assets/videos/video-start.mp4"
             />
           </ZPattern.Combinable>
@@ -78,7 +71,9 @@ export const Home = () => {
               />
               <div>
                 <h3 className="font-semibold">Stranger Things</h3>
-                <p className="text-blue-500">Downloading...</p>
+                <p className="text-blue-500">
+                  {t("z-pattern.overlay-downloading")}
+                </p>
               </div>
               <MdDownloading
                 title="Downloading"
@@ -89,12 +84,9 @@ export const Home = () => {
           </ZPattern.Combinable>
           <ZPattern.Content>
             <h2 className="mb-6 text-4xl font-extrabold lg:text-5xl">
-              Enjoy on your TV
+              {t("z-pattern.title-download")}
             </h2>
-            <p className="text-lg">
-              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-              Blu-ray players, and more.
-            </p>
+            <p className="text-lg">{t("z-pattern.description-download")}</p>
           </ZPattern.Content>
         </ZPattern>
       </Wrapper>
@@ -103,12 +95,9 @@ export const Home = () => {
         <ZPattern>
           <ZPattern.Content>
             <h2 className="mb-6 text-4xl font-extrabold lg:text-5xl">
-              Watch everywhere
+              {t("z-pattern.title-watch")}
             </h2>
-            <p className="text-lg">
-              Stream unlimited movies and TV shows on your phone, tablet,
-              laptop, and TV.
-            </p>
+            <p className="text-lg">{t("z-pattern.description-watch")}</p>
           </ZPattern.Content>
           <ZPattern.Combinable>
             <ZPattern.Image
@@ -117,11 +106,7 @@ export const Home = () => {
             />
             <ZPattern.Video
               extraStyles="max-w-[63%] max-h-[47%] top-[34%] "
-              autoPlay
-              muted
-              loop
               src="./assets/videos/video-devices.mp4"
-              title="Hawkings Middle School Serie"
             />
           </ZPattern.Combinable>
         </ZPattern>
@@ -130,16 +115,13 @@ export const Home = () => {
       <Wrapper>
         <ZPattern>
           <ZPattern.Combinable>
-            <ZPatternImage src="./assets/images/kids.png" alt="Kids" />
+            <ZPattern.Image src="./assets/images/kids.png" alt="Kids" />
           </ZPattern.Combinable>
           <ZPattern.Content>
             <h2 className="mb-6 text-4xl font-extrabold lg:text-5xl">
-              Create profiles for kids
+              {t("z-pattern.title-kids")}
             </h2>
-            <p className="text-lg">
-              Send kids on adventures with their favorite characters in a space
-              made just for them—free with your membership.
-            </p>
+            <p className="text-lg">{t("z-pattern.description-kids")}</p>
           </ZPattern.Content>
         </ZPattern>
       </Wrapper>
