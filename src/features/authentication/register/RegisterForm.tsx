@@ -1,27 +1,34 @@
 import { useForm } from "react-hook-form";
 import { Form } from "../../form/Form";
-import { LoginFormSchema, LoginFormSchemaType } from "./LoginFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { MdOutlineErrorOutline } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import { CustomLink } from "../../ui/CustomLink";
 import { RoutesEnum } from "../../../types/shared";
+import {
+  RegisterFormSchema,
+  RegisterFormSchemaType,
+} from "./RegisterFormSchema";
 
-export const LoginForm = () => {
+export const RegisterForm = () => {
   const { t } = useTranslation();
   const {
     register,
     formState: { errors },
     handleSubmit,
-  } = useForm<LoginFormSchemaType>({ resolver: zodResolver(LoginFormSchema) });
+  } = useForm<RegisterFormSchemaType>({
+    resolver: zodResolver(RegisterFormSchema),
+  });
 
-  const submitHandler = (data: LoginFormSchemaType) => {
+  const submitHandler = (data: RegisterFormSchemaType) => {
     console.log(data);
   };
 
   return (
     <div className="rounded-md bg-black/70 p-8">
-      <h1 className="mb-8 text-left text-3xl font-bold">{t("forms.login")}</h1>
+      <h1 className="mb-8 text-left text-3xl font-bold">
+        {t("forms.register")}
+      </h1>
       <Form
         onSubmit={handleSubmit(submitHandler)}
         extraStyles="flex flex-col gap-6 mb-10"
@@ -62,17 +69,33 @@ export const LoginForm = () => {
             </Form.Error>
           )}
         </Form.Group>
-        <Form.Submit modifier="form">{t("forms.login")}</Form.Submit>
+        <Form.Group>
+          <Form.Item>
+            <Form.Input
+              id="confirmPassword"
+              required
+              {...register("confirmPassword")}
+              error={errors?.confirmPassword?.message}
+              type="password"
+            />
+            <Form.Label id="confirmPassword">
+              {t("inputs.confirmPassword")}
+            </Form.Label>
+            <Form.TogglePassword />
+          </Form.Item>
+          {errors?.confirmPassword && (
+            <Form.Error>
+              <MdOutlineErrorOutline aria-label="Error" />
+              {errors.confirmPassword.message}
+            </Form.Error>
+          )}
+        </Form.Group>
+        <Form.Submit modifier="form">{t("forms.register")}</Form.Submit>
       </Form>
-      <p className="mb-8">
-        <CustomLink to="/forgot-password" modifier="secondary">
-          {t("links.forgot-password")}
-        </CustomLink>
-      </p>
       <p className="flex flex-col items-center gap-4 ">
-        <span>{t("links.new-title")}</span>
-        <CustomLink to={RoutesEnum.REGISTER} modifier="register">
-          {t("links.new")}
+        <span>{t("links.already-title")}</span>
+        <CustomLink to={RoutesEnum.LOGIN} modifier="register">
+          {t("links.logIn")}
         </CustomLink>
       </p>
     </div>

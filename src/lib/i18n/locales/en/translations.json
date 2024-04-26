@@ -3,7 +3,8 @@
     "logIn": "Sign In",
     "forgot-password": "Forgot password?",
     "new-title": "New to Nextflux?",
-    "new": "Sign up now"
+    "new": "Sign up now",
+    "already-title": "Have account?"
   },
   "hero": {
     "title": "Unlimited movies, TV shows, and more",
@@ -11,7 +12,8 @@
   },
   "inputs": {
     "email": "Email address",
-    "password": "Password"
+    "password": "Password",
+    "confirmPassword": "Confirm password"
   },
   "newsletter": {
     "title": "Ready to watch? Enter your email to create or restart your membership.",
@@ -59,6 +61,7 @@
     }
   },
   "forms": {
-    "login": "Sign In"
+    "login": "Sign In",
+    "register": "Register"
   }
 }

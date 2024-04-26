@@ -3,7 +3,8 @@
     "logIn": "Zaloguj się",
     "forgot-password": "Zapomniałeś hasła?",
     "new-title": "Nie masz jeszcze konta w serwisie Netflix?",
-    "new": "Zarejestruj się"
+    "new": "Zarejestruj się",
+    "already-title": "Masz już konto?"
   },
   "hero": {
     "title": "Filmy, seriale i wiele więcej bez ograniczeń",
@@ -11,7 +12,8 @@
   },
   "inputs": {
     "email": "Adres e-mail",
-    "password": "Hasło"
+    "password": "Hasło",
+    "confirmPassword": "Potwierdź hasło"
   },
   "newsletter": {
     "title": "Zaczynamy oglądać? Wprowadź adres e‑mail, aby utworzyć lub odnowić konto.",
@@ -59,6 +61,7 @@
     }
   },
   "forms": {
-    "login": "Zaloguj się"
+    "login": "Zaloguj się",
+    "register": "Zarejestruj się"
   }
 }
