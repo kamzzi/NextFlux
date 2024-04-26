@@ -10,9 +10,12 @@ import {
   RegisterFormSchemaType,
 } from "./RegisterFormSchema";
 import { useNewsletterParams } from "../../ui/Newsletter/useNewsletterParams";
+import { useRegister } from "./useRegister";
+import { Loader } from "../../ui/Loader";
 
 export const RegisterForm = () => {
   const { params } = useNewsletterParams();
+  const { registerMutate, isRegistering } = useRegister();
   const { t } = useTranslation();
   const {
     register,
@@ -23,8 +26,8 @@ export const RegisterForm = () => {
     defaultValues: { ...params },
   });
 
-  const submitHandler = (data: RegisterFormSchemaType) => {
-    console.log(data);
+  const submitHandler = ({ email, password }: RegisterFormSchemaType) => {
+    registerMutate({ email, password });
   };
 
   return (
@@ -93,7 +96,9 @@ export const RegisterForm = () => {
             </Form.Error>
           )}
         </Form.Group>
-        <Form.Submit modifier="form">{t("forms.register")}</Form.Submit>
+        <Form.Submit modifier="form">
+          {isRegistering ? <Loader /> : t("forms.register")}
+        </Form.Submit>
       </Form>
       <p className="flex flex-col items-center gap-4 ">
         <span>{t("links.already-title")}</span>

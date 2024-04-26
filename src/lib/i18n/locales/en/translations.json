@@ -62,6 +62,10 @@
   },
   "forms": {
     "login": "Sign In",
-    "register": "Register"
+    "register": "Register",
+    "register-user": "User successfully registered."
+  },
+  "validation": {
+    "register-user": "User already registered."
   }
 }

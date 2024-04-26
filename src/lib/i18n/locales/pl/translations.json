@@ -62,6 +62,10 @@
   },
   "forms": {
     "login": "Zaloguj się",
-    "register": "Zarejestruj się"
+    "register": "Zarejestruj się",
+    "register-user": "Użytkownik pomyślnie zarejestrowany."
+  },
+  "validation": {
+    "register-user": "Użytkownik jest już zarejestrowany."
   }
 }
