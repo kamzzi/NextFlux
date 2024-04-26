@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import clsx from "clsx";
 
-export type ButtonModifierStyle = "form";
+export type ButtonModifierStyle = "newsletter" | "form";
 
 type ButtonProps = {
   children: ReactNode;
@@ -9,7 +9,9 @@ type ButtonProps = {
 };
 
 const modifierStyles: Record<ButtonModifierStyle, string> = {
-  form: "text-slate-50 w-40 sm:w-52 px-8 py-5 rounded-md bg-red-700 font-medium transition hover:bg-red-800",
+  newsletter:
+    "text-slate-50 w-40 sm:w-52 px-8 py-5 rounded-md bg-red-700 font-medium transition hover:bg-red-800",
+  form: "text-slate-50 w-40 w-full px-8 py-5 rounded-md bg-red-700 font-medium transition hover:bg-red-800",
 };
 
 export const Button = ({

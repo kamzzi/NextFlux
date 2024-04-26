@@ -23,13 +23,13 @@ export const Home = () => {
             <Logo />
             <Navbar.Actions>
               <LanguageSwitcher />
-              <CustomLink to={RoutesEnum.HOME} modifier="primary">
+              <CustomLink to={RoutesEnum.LOGIN} modifier="primary">
                 {t("links.logIn")}
               </CustomLink>
             </Navbar.Actions>
           </Navbar>
         </Wrapper>
-        <Hero.Body>
+        <Hero.Body extraStyles="max-w-[45rem] xl:max-w-[70rem]">
           <h1 className="text-3xl font-extrabold text-slate-50 md:text-4xl lg:text-5xl xl:text-6xl">
             {t("hero.title")}
           </h1>
@@ -45,7 +45,9 @@ export const Home = () => {
       <section>
         <AccordionHome />
       </section>
-      <Newsletter />
+      <div className="pb-12">
+        <Newsletter />
+      </div>
     </Global>
   );
 };

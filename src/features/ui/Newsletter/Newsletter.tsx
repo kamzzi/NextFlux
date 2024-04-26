@@ -43,7 +43,9 @@ export const Newsletter = () => {
             </Form.Error>
           )}
         </Form.Group>
-        <Form.Submit modifier="form">{t("newsletter.submit")}</Form.Submit>
+        <Form.Submit modifier="newsletter">
+          {t("newsletter.submit")}
+        </Form.Submit>
       </Form>
     </div>
   );

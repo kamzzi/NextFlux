@@ -1,15 +1,24 @@
+import clsx from "clsx";
 import { ReactNode } from "react";
 
 type HeroProps = {
   children: ReactNode;
 };
 
-export const HeroContent = ({ children }: HeroProps) => {
-  return (
-    <div className="relative z-10 mx-auto flex max-w-[45rem] flex-col gap-5 px-4 py-4 text-center text-white sm:py-24 xl:max-w-[70rem]">
-      {children}
-    </div>
-  );
+type HeroContentProps = {
+  extraStyles?: string;
+};
+
+export const HeroContent = ({
+  extraStyles,
+  children,
+}: HeroContentProps & HeroProps) => {
+  const base =
+    "relative z-10 mx-auto flex flex-col gap-5 px-4 py-4 text-center text-white sm:py-24 ";
+
+  const className = clsx(base, extraStyles);
+
+  return <div className={className}>{children}</div>;
 };
 
 export const Hero = ({ children }: HeroProps) => {

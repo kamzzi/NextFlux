@@ -7,7 +7,8 @@
     "description": "Oglądaj wszędzie. Anuluj w każdej chwili."
   },
   "inputs": {
-    "email": "Adres e-mail"
+    "email": "Adres e-mail",
+    "password": "Hasło"
   },
   "newsletter": {
     "title": "Zaczynamy oglądać? Wprowadź adres e‑mail, aby utworzyć lub odnowić konto.",
@@ -53,5 +54,8 @@
       "description": "W ramach członkostwa w serwisie Nextflux otrzymujesz dostęp do specjalnej sekcji dla dzieci. Młodzi widzowie mogą oglądać tam filmy, seriale i programy przeznaczone właśnie dla nich, a rodzice mają nad wszystkim kontrolę.",
       "subdescription": "Profile dla dzieci chronione są kodem PIN kontroli rodzicielskiej, który uniemożliwia dostęp do treści przekraczających określone kategorie wiekowe, a także pozwala blokować konkretne tytuły."
     }
+  },
+  "forms": {
+    "login": "Zaloguj się"
   }
 }
