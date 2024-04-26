@@ -1,5 +1,17 @@
-import { FaPlus } from "react-icons/fa6";
+import { FaPlus, FaMinus } from "react-icons/fa6";
+import { useAccordion } from "./AccordionContext/useAccordion";
 
-export const AccordionIcon = () => {
-  return <FaPlus aria-label="Open item" />;
+type AccordionIconProps = {
+  id: number;
+};
+
+export const AccordionIcon = ({ id }: AccordionIconProps) => {
+  const { current } = useAccordion();
+  const isOpen = current === id;
+
+  return isOpen ? (
+    <FaMinus aria-label="Close item" />
+  ) : (
+    <FaPlus aria-label="Open item" />
+  );
 };

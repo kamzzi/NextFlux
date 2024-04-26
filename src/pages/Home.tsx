@@ -45,6 +45,7 @@ export const Home = () => {
       <section>
         <AccordionHome />
       </section>
+      <Newsletter />
     </Global>
   );
 };

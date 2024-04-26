@@ -20,7 +20,7 @@ export const Newsletter = () => {
   };
 
   return (
-    <div className="py-9">
+    <div className="px-4 py-9 text-center">
       <p className="mb-8 text-2xl text-slate-50">{t("newsletter.title")}</p>
       <Form
         onSubmit={handleSubmit(submitHandler)}
