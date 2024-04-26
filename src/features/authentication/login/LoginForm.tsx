@@ -6,17 +6,20 @@ import { MdOutlineErrorOutline } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import { CustomLink } from "../../ui/CustomLink";
 import { RoutesEnum } from "../../../types/shared";
+import { useLogin } from "./useLogin";
+import { Loader } from "../../ui/Loader";
 
 export const LoginForm = () => {
   const { t } = useTranslation();
+  const { loginMutate, isLogin } = useLogin();
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm<LoginFormSchemaType>({ resolver: zodResolver(LoginFormSchema) });
 
-  const submitHandler = (data: LoginFormSchemaType) => {
-    console.log(data);
+  const submitHandler = ({ email, password }: LoginFormSchemaType) => {
+    loginMutate({ email, password });
   };
 
   return (
@@ -62,7 +65,9 @@ export const LoginForm = () => {
             </Form.Error>
           )}
         </Form.Group>
-        <Form.Submit modifier="form">{t("forms.login")}</Form.Submit>
+        <Form.Submit modifier="form">
+          {isLogin ? <Loader /> : t("forms.login")}
+        </Form.Submit>
       </Form>
       <p className="mb-8">
         <CustomLink to="/forgot-password" modifier="secondary">

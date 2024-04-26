@@ -66,6 +66,7 @@
     "register-user": "User successfully registered."
   },
   "validation": {
-    "register-user": "User already registered."
+    "register-user": "User already registered.",
+    "login-user": "Invalid user credentials."
   }
 }

@@ -4,6 +4,7 @@ import { RoutesEnum } from "./types/shared";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { Toaster } from "react-hot-toast";
+import { Dashboard } from "./pages/Dashboard";
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
           <Route element={<Home />} path={RoutesEnum.HOME} />
           <Route element={<Login />} path={RoutesEnum.LOGIN} />
           <Route element={<Register />} path={RoutesEnum.REGISTER} />
+          <Route element={<Dashboard />} path={RoutesEnum.DASHBOARD} />
         </Routes>
         <Toaster
           position="top-center"

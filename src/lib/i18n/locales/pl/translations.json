@@ -66,6 +66,7 @@
     "register-user": "Użytkownik pomyślnie zarejestrowany."
   },
   "validation": {
-    "register-user": "Użytkownik jest już zarejestrowany."
+    "register-user": "Użytkownik jest już zarejestrowany.",
+    "login-user": "Błędne dane użytkownika."
   }
 }
