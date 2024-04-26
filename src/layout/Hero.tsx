@@ -3,16 +3,10 @@ import { ReactNode } from "react";
 
 type HeroProps = {
   children: ReactNode;
-};
-
-type HeroContentProps = {
   extraStyles?: string;
 };
 
-export const HeroContent = ({
-  extraStyles,
-  children,
-}: HeroContentProps & HeroProps) => {
+export const HeroContent = ({ extraStyles, children }: HeroProps) => {
   const base =
     "relative z-10 mx-auto flex flex-col gap-5 px-4 py-4 text-center text-white sm:py-24 ";
 
@@ -21,12 +15,13 @@ export const HeroContent = ({
   return <div className={className}>{children}</div>;
 };
 
-export const Hero = ({ children }: HeroProps) => {
-  return (
-    <header className="gradient-overlay relative  bg-hero-small bg-cover  bg-no-repeat md:bg-hero-medium lg:bg-hero-large">
-      {children}
-    </header>
-  );
+export const Hero = ({ extraStyles, children }: HeroProps) => {
+  const base =
+    "gradient-overlay relative  bg-hero-small bg-cover  bg-no-repeat md:bg-hero-medium lg:bg-hero-large";
+
+  const className = clsx(base, extraStyles);
+
+  return <header className={className}>{children}</header>;
 };
 
 Hero.Body = HeroContent;

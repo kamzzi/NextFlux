@@ -4,6 +4,7 @@ import { LoginFormSchema, LoginFormSchemaType } from "./LoginFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { MdOutlineErrorOutline } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import { CustomLink } from "../../ui/CustomLink";
 
 export const LoginForm = () => {
   const { t } = useTranslation();
@@ -22,7 +23,7 @@ export const LoginForm = () => {
       <h1 className="mb-8 text-left text-3xl font-bold">{t("forms.login")}</h1>
       <Form
         onSubmit={handleSubmit(submitHandler)}
-        extraStyles="flex flex-col gap-6"
+        extraStyles="flex flex-col gap-6 mb-10"
       >
         <Form.Group>
           <Form.Item>
@@ -62,6 +63,17 @@ export const LoginForm = () => {
         </Form.Group>
         <Form.Submit modifier="form">{t("forms.login")}</Form.Submit>
       </Form>
+      <p className="mb-8">
+        <CustomLink to="/forgot-password" modifier="secondary">
+          {t("links.forgot-password")}
+        </CustomLink>
+      </p>
+      <p className="flex flex-col items-center gap-4 ">
+        <span>{t("links.new-title")}</span>
+        <CustomLink to="/register" modifier="register">
+          {t("links.new")}
+        </CustomLink>
+      </p>
     </div>
   );
 };

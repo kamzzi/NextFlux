@@ -1,6 +1,9 @@
 {
   "links": {
-    "logIn": "Zaloguj się"
+    "logIn": "Zaloguj się",
+    "forgot-password": "Zapomniałeś hasła?",
+    "new-title": "Nie masz jeszcze konta w serwisie Netflix?",
+    "new": "Zarejestruj się"
   },
   "hero": {
     "title": "Filmy, seriale i wiele więcej bez ograniczeń",

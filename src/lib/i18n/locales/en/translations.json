@@ -1,6 +1,9 @@
 {
   "links": {
-    "logIn": "Sign In"
+    "logIn": "Sign In",
+    "forgot-password": "Forgot password?",
+    "new-title": "New to Nextflux?",
+    "new": "Sign up now"
   },
   "hero": {
     "title": "Unlimited movies, TV shows, and more",
