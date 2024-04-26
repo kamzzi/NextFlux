@@ -5,6 +5,7 @@ import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { Toaster } from "react-hot-toast";
 import { Dashboard } from "./pages/Dashboard";
+import { ProtectedRoute } from "./features/ui/ProtectedRoute";
 
 export const App = () => {
   return (
@@ -14,7 +15,14 @@ export const App = () => {
           <Route element={<Home />} path={RoutesEnum.HOME} />
           <Route element={<Login />} path={RoutesEnum.LOGIN} />
           <Route element={<Register />} path={RoutesEnum.REGISTER} />
-          <Route element={<Dashboard />} path={RoutesEnum.DASHBOARD} />
+          <Route
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+            path={RoutesEnum.DASHBOARD}
+          />
         </Routes>
         <Toaster
           position="top-center"
