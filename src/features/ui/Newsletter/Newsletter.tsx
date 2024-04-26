@@ -4,9 +4,11 @@ import { MdOutlineErrorOutline } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import { NewsletterSchema } from "./NewsletterSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useNewsletterParams } from "./useNewsletterParams";
 
 export const Newsletter = () => {
   const { t } = useTranslation();
+  const { redirect } = useNewsletterParams();
   const {
     register,
     handleSubmit,
@@ -15,8 +17,8 @@ export const Newsletter = () => {
     resolver: zodResolver(NewsletterSchema),
   });
 
-  const submitHandler = (data: NewsletterSchema) => {
-    console.log(data);
+  const submitHandler = ({ email }: NewsletterSchema) => {
+    redirect({ email });
   };
 
   return (

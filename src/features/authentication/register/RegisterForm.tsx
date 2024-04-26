@@ -9,8 +9,10 @@ import {
   RegisterFormSchema,
   RegisterFormSchemaType,
 } from "./RegisterFormSchema";
+import { useNewsletterParams } from "../../ui/Newsletter/useNewsletterParams";
 
 export const RegisterForm = () => {
+  const { params } = useNewsletterParams();
   const { t } = useTranslation();
   const {
     register,
@@ -18,6 +20,7 @@ export const RegisterForm = () => {
     handleSubmit,
   } = useForm<RegisterFormSchemaType>({
     resolver: zodResolver(RegisterFormSchema),
+    defaultValues: { ...params },
   });
 
   const submitHandler = (data: RegisterFormSchemaType) => {
