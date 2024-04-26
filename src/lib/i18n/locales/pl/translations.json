@@ -23,5 +23,35 @@
     "title-kids": "Utwórz profile dla dzieci",
     "description-kids": "Pozwól dzieciom przeżywać przygody w towarzystwie uwielbianych bohaterów — w specjalnej sekcji serwisu oferowanej bezpłatnie w ramach członkostwa.",
     "overlay-downloading": "Pobieranie..."
+  },
+  "accordion": {
+    "title": "Często zadawane pytania",
+    "what-is": {
+      "title": "Czym jest Nextflux?",
+      "description": "Nextflux to usługa przesyłania strumieniowego, dzięki której użytkownicy mogą korzystać z szerokiej oferty nagradzanych filmów, seriali, programów, anime oraz produkcji dokumentalnych za pośrednictwem tysięcy urządzeń połączonych z internetem.",
+      "subdescription": "Możesz oglądać do woli, gdziekolwiek jesteś — bez reklam i za jedną miesięczną opłatą. Co tydzień dodajemy nowe tytuły, więc zawsze jest coś ciekawego do obejrzenia."
+    },
+    "cost": {
+      "title": "Ile kosztuje korzystanie z serwisu Nextflux?",
+      "description": "Oglądaj materiały z serwisu Nextflux na smartfonie, tablecie, telewizorze Smart TV, laptopie lub innym urządzeniu do odtwarzania — za jedną stałą opłatą miesięczną. Mamy plany w cenie od 29 zł do 60 zł miesięcznie. Bez dodatkowych kosztów i bez umów."
+    },
+    "watch": {
+      "title": "Gdzie mogę oglądac?",
+      "description": "Oglądaj, gdzie i kiedy chcesz. Zaloguj się za pomocą danych swojego konta w witrynie netflix.com na komputerze lub na innym urządzeniu z dostępem do Internetu i zainstalowaną aplikacją Nextflux, takim jak telewizor Smart TV, smartfon, tablet, odtwarzacz multimedialny czy konsola do gier.",
+      "subdescription": "Możesz także pobierać ulubione programy na urządzenia przenośne z systemem iOS lub Android oraz na urządzenia z aplikacją dla systemu Windows 10. Pobrane tytuły możesz oglądać poza domem, bez połączenia z internetem. Korzystaj z serwisu Netflix, gdzie tylko chcesz."
+    },
+    "resignation": {
+      "title": "Jak zrezygnować z członkostwa?",
+      "description": "Nextflux niczego nie narzuca. Żadnych zbędnych umów ani zobowiązań. Możesz w łatwy sposób anulować członkostwo online — wystarczą dwa kliknięcia. Nie naliczamy opłat za rezygnację, dlatego możesz rozpocząć członkostwo i zrezygnować z niego w dowolnej chwili."
+    },
+    "what-can": {
+      "title": "Jakie materiały mogę oglądać w serwisie Nextflux?",
+      "description": "Serwis Nextflux oferuje dostęp do obszernej biblioteki zawierającej filmy pełnometrażowe i dokumentalne, seriale, programy, anime, nagradzane Nextflux Originals i nie tylko. Oglądaj do woli, kiedy tylko chcesz."
+    },
+    "for-kids": {
+      "title": "Czy Nextflux jest odpowiedni dla dzieci?",
+      "description": "W ramach członkostwa w serwisie Nextflux otrzymujesz dostęp do specjalnej sekcji dla dzieci. Młodzi widzowie mogą oglądać tam filmy, seriale i programy przeznaczone właśnie dla nich, a rodzice mają nad wszystkim kontrolę.",
+      "subdescription": "Profile dla dzieci chronione są kodem PIN kontroli rodzicielskiej, który uniemożliwia dostęp do treści przekraczających określone kategorie wiekowe, a także pozwala blokować konkretne tytuły."
+    }
   }
 }
