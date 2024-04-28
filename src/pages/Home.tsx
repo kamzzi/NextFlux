@@ -17,7 +17,7 @@ export const Home = () => {
 
   return (
     <Global>
-      <Hero>
+      <Hero extraStyles="bg-hero-small md:bg-hero-medium lg:bg-hero-large">
         <Wrapper>
           <Navbar>
             <Logo />

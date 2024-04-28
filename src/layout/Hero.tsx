@@ -17,7 +17,7 @@ export const HeroContent = ({ extraStyles, children }: HeroProps) => {
 
 export const Hero = ({ extraStyles, children }: HeroProps) => {
   const base =
-    "gradient-overlay relative  bg-hero-small bg-cover  bg-no-repeat md:bg-hero-medium lg:bg-hero-large";
+    "gradient-overlay relative bg-cover bg-no-repeat";
 
   const className = clsx(base, extraStyles);
 

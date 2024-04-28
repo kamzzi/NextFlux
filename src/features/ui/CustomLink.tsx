@@ -2,7 +2,12 @@ import { ReactNode } from "react";
 import { Link, LinkProps } from "react-router-dom";
 import clsx from "clsx";
 
-type CustomLinkModifier = "logo" | "primary" | "secondary" | "register";
+type CustomLinkModifier =
+  | "logo"
+  | "primary"
+  | "secondary"
+  | "register"
+  | "not-found";
 
 type CustomLinkProps = {
   children: ReactNode;
@@ -16,6 +21,8 @@ const modifierStyles: Record<CustomLinkModifier, string> = {
   secondary:
     "text-slate-50 hover:text-slate-300 hover:underline transition-all",
   register: "rounded-md px-3 py-2 font-medium bg-gray-950/80 text-slate-50",
+  ["not-found"]:
+    "bg-slate-50 text-slate-950 font-semibold py-3 px-5 rounded-md self-center transition hover:bg-slate-200",
 };
 
 export const CustomLink = ({

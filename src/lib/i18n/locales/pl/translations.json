@@ -68,5 +68,11 @@
   "validation": {
     "register-user": "Użytkownik jest już zarejestrowany.",
     "login-user": "Błędne dane użytkownika."
+  },
+  "not-found": {
+    "title": "Zgubiłeś się?",
+    "description": "Przepraszamy, nie możemy znaleźć takiej strony. Wróć na stronę główną..",
+    "link": "Strona główna Nextflux",
+    "error": "Kod błędu"
   }
 }

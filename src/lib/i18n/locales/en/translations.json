@@ -68,5 +68,11 @@
   "validation": {
     "register-user": "User already registered.",
     "login-user": "Invalid user credentials."
+  },
+  "not-found": {
+    "title": "Lost your way?",
+    "description": "Sorry, we can't find that page. You'll find lots to explore on the home page.",
+    "link": "Nextflux Home",
+    "error": "Error Code"
   }
 }
