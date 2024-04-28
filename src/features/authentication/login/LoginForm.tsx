@@ -70,7 +70,7 @@ export const LoginForm = () => {
         </Form.Submit>
       </Form>
       <p className="mb-8">
-        <CustomLink to="/forgot-password" modifier="secondary">
+        <CustomLink to={RoutesEnum.FORGOT_PASSWORD} modifier="secondary">
           {t("links.forgot-password")}
         </CustomLink>
       </p>

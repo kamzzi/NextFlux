@@ -7,6 +7,8 @@ import { Toaster } from "react-hot-toast";
 import { Dashboard } from "./pages/Dashboard";
 import { ProtectedRoute } from "./features/ui/ProtectedRoute";
 import { NotFound } from "./pages/NotFound";
+import { ForgotPassword } from "./pages/ForgotPassword";
+import { Recovery } from "./pages/Recovery";
 
 export const App = () => {
   return (
@@ -16,6 +18,11 @@ export const App = () => {
           <Route element={<Home />} path={RoutesEnum.HOME} />
           <Route element={<Login />} path={RoutesEnum.LOGIN} />
           <Route element={<Register />} path={RoutesEnum.REGISTER} />
+          <Route
+            element={<ForgotPassword />}
+            path={RoutesEnum.FORGOT_PASSWORD}
+          />
+          <Route element={<Recovery />} path={RoutesEnum.RECOVERY} />
           <Route
             element={
               <ProtectedRoute>

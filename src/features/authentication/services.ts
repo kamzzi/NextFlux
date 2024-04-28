@@ -47,3 +47,31 @@ export const getUser = async () => {
 
   return user;
 };
+
+export const forgotPassword = async ({ email }: Pick<AuthData, "email">) => {
+  const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: "http://localhost:5173/recovery",
+  });
+
+  console.log(data, error);
+
+  if (error) {
+    throw new Error(error.message);
+  }
+
+  return data;
+};
+
+export const recoveryPassword = async ({
+  password,
+}: Pick<AuthData, "password">) => {
+  const { data, error } = await supabase.auth.updateUser({
+    password,
+  });
+
+  if (error) {
+    throw new Error(error.message);
+  }
+
+  return data;
+};

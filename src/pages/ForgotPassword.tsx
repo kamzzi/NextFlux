@@ -1,15 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { CustomLink } from "../features/ui/CustomLink";
-import { LanguageSwitcher } from "../features/ui/LanguageSwitcher";
 import { Logo } from "../features/ui/Logo";
 import { Global } from "../layout/Global";
 import { Hero } from "../layout/Hero";
 import { Navbar } from "../layout/Navbar";
 import { Wrapper } from "../layout/Wrapper";
 import { RoutesEnum } from "../types/shared";
-import { RegisterForm } from "../features/authentication/register/RegisterForm";
+import { LanguageSwitcher } from "../features/ui/LanguageSwitcher";
+import { ForgotPasswordForm } from "../features/authentication/forgotPassword/ForgotPasswordForm";
 
-export const Register = () => {
+export const ForgotPassword = () => {
   const { t } = useTranslation();
 
   return (
@@ -27,7 +27,7 @@ export const Register = () => {
           </Navbar>
         </Wrapper>
         <Hero.Body extraStyles="max-w-[35rem]">
-          <RegisterForm />
+          <ForgotPasswordForm />
         </Hero.Body>
       </Hero>
     </Global>

@@ -63,7 +63,9 @@
   "forms": {
     "login": "Zaloguj się",
     "register": "Zarejestruj się",
-    "register-user": "Użytkownik pomyślnie zarejestrowany."
+    "register-user": "Użytkownik pomyślnie zarejestrowany.",
+    "forgot": "Zresetuj hasło",
+    "change": "Zmień hasło"
   },
   "validation": {
     "register-user": "Użytkownik jest już zarejestrowany.",
@@ -74,5 +76,9 @@
     "description": "Przepraszamy, nie możemy znaleźć takiej strony. Wróć na stronę główną..",
     "link": "Strona główna Nextflux",
     "error": "Kod błędu"
+  },
+  "recovery": {
+    "success": "Sprawdź email po więcej informacji.",
+    "success-change": "Pomyślnie zmieniono hasło!"
   }
 }

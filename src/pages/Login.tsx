@@ -14,7 +14,7 @@ export const Login = () => {
 
   return (
     <Global>
-      <Hero extraStyles="min-h-screen">
+      <Hero extraStyles="min-h-screen bg-hero-small md:bg-hero-medium lg:bg-hero-large">
         <Wrapper>
           <Navbar>
             <Logo />

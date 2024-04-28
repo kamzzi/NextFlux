@@ -63,7 +63,9 @@
   "forms": {
     "login": "Sign In",
     "register": "Register",
-    "register-user": "User successfully registered."
+    "register-user": "User successfully registered.",
+    "forgot": "Reset password",
+    "change": "Change password"
   },
   "validation": {
     "register-user": "User already registered.",
@@ -74,5 +76,9 @@
     "description": "Sorry, we can't find that page. You'll find lots to explore on the home page.",
     "link": "Nextflux Home",
     "error": "Error Code"
+  },
+  "recovery": {
+    "success": "Check email for more informations.",
+    "success-change": "Successfully changed password!"
   }
 }
